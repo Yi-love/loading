@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading test</title>
+</head>
+<body>
+  <style>
+    /*==================loading========================*/
+    @-webkit-keyframes uil-default-anim {
+      0% {
+      opacity:1
+      }
+      100% {
+        opacity:0
+      }
+    }@keyframes uil-default-anim {
+      0% {
+        opacity:1
+      }
+      100% {
+        opacity:0
+      }
+    }
+    .loading.show .uil-default-css > div:nth-of-type(1) {
+      -webkit-animation:uil-default-anim 1s linear infinite;
+      animation:uil-default-anim 1s linear infinite;
+      -webkit-animation-delay:-0.5s;
+      animation-delay:-0.5s;
+    }
+
+    .loading.show .uil-default-css > div:nth-of-type(2) {
+      -webkit-animation:uil-default-anim 1s linear infinite;
+      animation:uil-default-anim 1s linear infinite;
+      -webkit-animation-delay:-0.4166666666666667s;
+      animation-delay:-0.4166666666666667s;
+    }
+
+    .loading.show .uil-default-css > div:nth-of-type(3) {
+      -webkit-animation:uil-default-anim 1s linear infinite;
+      animation:uil-default-anim 1s linear infinite;
+      -webkit-animation-delay:-0.33333333333333337s;
+      animation-delay:-0.33333333333333337s;
+    }
+
+    .loading.show .uil-default-css > div:nth-of-type(4) {
+      -webkit-animation:uil-default-anim 1s linear infinite;
+      animation:uil-default-anim 1s linear infinite;
+      -webkit-animation-delay:-0.25s;
+      animation-delay:-0.25s;
+    }
+
+    .loading.show .uil-default-css > div:nth-of-type(5) {
+      -webkit-animation:uil-default-anim 1s linear infinite;
+      animation:uil-default-anim 1s linear infinite;
+      -webkit-animation-delay:-0.16666666666666669s;
+      animation-delay:-0.16666666666666669s;
+    }
+
+    .loading.show .uil-default-css > div:nth-of-type(6) {
+      -webkit-animation:uil-default-anim 1s linear infinite;
+      animation:uil-default-anim 1s linear infinite;
+      -webkit-animation-delay:-0.08333333333333331s;
+      animation-delay:-0.08333333333333331s;
+    }
+
+    .loading.show .uil-default-css > div:nth-of-type(7) {
+      -webkit-animation:uil-default-anim 1s linear infinite;
+      animation:uil-default-anim 1s linear infinite;
+      -webkit-animation-delay:0s;
+      animation-delay:0s;
+    }
+
+    .loading.show .uil-default-css > div:nth-of-type(8) {
+      -webkit-animation:uil-default-anim 1s linear infinite;
+      animation:uil-default-anim 1s linear infinite;
+      -webkit-animation-delay:0.08333333333333337s;
+      animation-delay:0.08333333333333337s;
+    }
+
+    .loading.show .uil-default-css > div:nth-of-type(9) {
+      -webkit-animation:uil-default-anim 1s linear infinite;
+      animation:uil-default-anim 1s linear infinite;
+      -webkit-animation-delay:0.16666666666666663s;
+      animation-delay:0.16666666666666663s;
+    }
+
+    .loading.show .uil-default-css > div:nth-of-type(10) {
+      -webkit-animation:uil-default-anim 1s linear infinite;
+      animation:uil-default-anim 1s linear infinite;
+      -webkit-animation-delay:0.25s;
+      animation-delay:0.25s;
+    }
+
+    .loading.show .uil-default-css > div:nth-of-type(11) {
+      -webkit-animation:uil-default-anim 1s linear infinite;
+      animation:uil-default-anim 1s linear infinite;
+      -webkit-animation-delay:0.33333333333333337s;
+      animation-delay:0.33333333333333337s;
+    }
+
+    .loading.show .uil-default-css > div:nth-of-type(12) {
+      -webkit-animation:uil-default-anim 1s linear infinite;
+      animation:uil-default-anim 1s linear infinite;
+      -webkit-animation-delay:0.41666666666666663s;
+      animation-delay:0.41666666666666663s;
+    }
+    .loading.show .uil-default-css {
+      position:relative;
+      background:none;
+      height: auto;
+    }
+    .loading{
+      position: fixed;
+      width: auto;
+      height: 40px;
+      min-width: 40px;
+      padding: 4px 10px;
+      top: 30%;
+      left: 50%;
+      display: none;
+      z-index: 99999;
+      background: rgba(0,0,0,0.8);
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    .loading.show{
+      display: block;
+    }
+    .loading.hide{
+      display: none;
+    }
+    .loading .loading-content{
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .loading-content .loading-icon{
+      margin-top: 0;
+      margin-left: 0;
+      float: left;
+      transform:scale(0.16);
+    }
+    .loading-content .loading-text{
+      margin-left: 40px;
+      line-height: 32px;
+      color: #fff;
+    }
+    .loading-content .loading-close{
+      transform: rotateZ(45deg);
+      color: #fff;
+      display: block;
+      position: absolute;
+      right: -15px;
+      top: -11px;
+      background: rgba(0,0,0,0.8);
+      width: 20px;
+      height: 20px;
+      font-size: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-weight: normal;
+      border-radius: 20px;
+      cursor: pointer;
+      display: none;
+    }
+    .loading:hover .loading-content .loading-close{
+      display: block;
+    }
+  </style>
+  <div class="loading" id="J_loading">
+    <div class="loading-content">
+       <div class="uil-default-css loading-icon"><div style="top:80px;left:93px;width:14px;height:40px;background:#00b2ff;-webkit-transform:rotate(0deg) translate(0,-60px);transform:rotate(0deg) translate(0,-60px);border-radius:10px;position:absolute;"></div><div style="top:80px;left:93px;width:14px;height:40px;background:#00b2ff;-webkit-transform:rotate(30deg) translate(0,-60px);transform:rotate(30deg) translate(0,-60px);border-radius:10px;position:absolute;"></div><div style="top:80px;left:93px;width:14px;height:40px;background:#00b2ff;-webkit-transform:rotate(60deg) translate(0,-60px);transform:rotate(60deg) translate(0,-60px);border-radius:10px;position:absolute;"></div><div style="top:80px;left:93px;width:14px;height:40px;background:#00b2ff;-webkit-transform:rotate(90deg) translate(0,-60px);transform:rotate(90deg) translate(0,-60px);border-radius:10px;position:absolute;"></div><div style="top:80px;left:93px;width:14px;height:40px;background:#00b2ff;-webkit-transform:rotate(120deg) translate(0,-60px);transform:rotate(120deg) translate(0,-60px);border-radius:10px;position:absolute;"></div><div style="top:80px;left:93px;width:14px;height:40px;background:#00b2ff;-webkit-transform:rotate(150deg) translate(0,-60px);transform:rotate(150deg) translate(0,-60px);border-radius:10px;position:absolute;"></div><div style="top:80px;left:93px;width:14px;height:40px;background:#00b2ff;-webkit-transform:rotate(180deg) translate(0,-60px);transform:rotate(180deg) translate(0,-60px);border-radius:10px;position:absolute;"></div><div style="top:80px;left:93px;width:14px;height:40px;background:#00b2ff;-webkit-transform:rotate(210deg) translate(0,-60px);transform:rotate(210deg) translate(0,-60px);border-radius:10px;position:absolute;"></div><div style="top:80px;left:93px;width:14px;height:40px;background:#00b2ff;-webkit-transform:rotate(240deg) translate(0,-60px);transform:rotate(240deg) translate(0,-60px);border-radius:10px;position:absolute;"></div><div style="top:80px;left:93px;width:14px;height:40px;background:#00b2ff;-webkit-transform:rotate(270deg) translate(0,-60px);transform:rotate(270deg) translate(0,-60px);border-radius:10px;position:absolute;"></div><div style="top:80px;left:93px;width:14px;height:40px;background:#00b2ff;-webkit-transform:rotate(300deg) translate(0,-60px);transform:rotate(300deg) translate(0,-60px);border-radius:10px;position:absolute;"></div><div style="top:80px;left:93px;width:14px;height:40px;background:#00b2ff;-webkit-transform:rotate(330deg) translate(0,-60px);transform:rotate(330deg) translate(0,-60px);border-radius:10px;position:absolute;"></div></div>
+    <span class="loading-text j-text">loading...</span>
+    <span class="loading-close j-close">+</span>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+<script>
+
+  var loading = new Loading({
+    wrapper : document.getElementById('J_loading'),
+    close   : document.querySelector('.j-close'),
+    text    : document.querySelector('.j-text')
+  });
+  loading.setText('hello loading start').show()
+</script>
+</body>
+</html>
